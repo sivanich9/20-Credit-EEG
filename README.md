@@ -1,6 +1,6 @@
 # 20-Credit-EEG
 
-Download the following codes from github and add each folder in libraries folder
+Download the following codes from github and add each folder in libraries(create it) folder
 
 1. https://github.com/widmann/firfilt/tree/master
 2. https://github.com/sccn/clean_rawdata/tree/master
