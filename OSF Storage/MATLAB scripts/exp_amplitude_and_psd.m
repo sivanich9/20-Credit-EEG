@@ -1,3 +1,9 @@
+%load("exp_after_rejected_components.mat");
+%instead of writing above line for load, go to that
+%"exp_after_rejected_components.mat" file and double click it automatically
+%loads in workspace.
+
+
 %% This code performs short term fft per epoch and averages across conditions (weighted by confidence)
 
 %load weights per epoch and condition index with rejected epochs applied
@@ -16,8 +22,6 @@ addpath('/MATLAB Drive/data/MW-BF-NL-main/Code/');
 
 %list of matlab files
 sbj = dir('/MATLAB Drive/data/results/reject_components/*mat');
-
-load("exp_after_rejected_components.mat");
 
 % short time fft
 window = 512; %1 second
@@ -62,7 +66,8 @@ for s = 1:size(sbj,1) %loop subject
     %disp("entered2")
     for fr = 1:size(freq,2) %loop frequency
         for e = 1:19 %loop electrode
-
+ 
+ 	    %average trails
             relative_amplitude_bf{fr}(s,e) = wmean(squeeze(relative_amplitude(s,condition_index_rejected{s}==1,e,fr))...
                 ,weights{s}(condition_index_rejected{s}==1));
 
@@ -89,6 +94,7 @@ end
 
 % get average spectrum per subject to plot
 
+%average electrodes
 avg_rel_mw = squeeze(mean(reshape(cell2mat(relative_amplitude_mw(:)'),[25 19 21]),2));
 avg_rel_bf = squeeze(mean(reshape(cell2mat(relative_amplitude_bf(:)'),[25 19 21]),2));
 avg_abs_mw = squeeze(mean(reshape(cell2mat(absolute_amplitude_mw(:)'),[25 19 21]),2));

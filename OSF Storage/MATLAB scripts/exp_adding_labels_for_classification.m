@@ -1,6 +1,10 @@
+%load("exp_after_amp_and_psd_for_classification.mat");
+%instead of writing above line for load, go to that
+%"exp_after_rejected_components.mat" file and double click it automatically
+%loads in workspace.
+
 cd '/MATLAB Drive/data/results/'
 addpath('/MATLAB Drive/data/OSF Storage/MATLAB scripts/');
-load("exp_after_amp_and_psd_for_classification.mat");
 
 % labels = {'bin1','bin2','bin3','bin4','bin5','bin6','bin7','bin8','bin9','bin10','bin11','bin12','bin13','bin14','bin15','bin16','bin17','bin18','bin19','bin20','bin21','bfmw'};
 % 
