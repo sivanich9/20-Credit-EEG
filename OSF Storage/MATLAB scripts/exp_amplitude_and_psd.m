@@ -17,8 +17,6 @@ addpath('/MATLAB Drive/data/MW-BF-NL-main/Code/');
 %list of matlab files
 sbj = dir('/MATLAB Drive/data/results/reject_components/*mat');
 
-cd '/MATLAB Drive/data/OSF Storage/MATLAB scripts/';
-
 load("exp_after_rejected_components.mat");
 
 % short time fft
