@@ -6,11 +6,11 @@ Download the following codes from github and add each folder in libraries(create
 2. https://github.com/sccn/clean_rawdata/tree/master
 3. https://github.com/fieldtrip/fieldtrip
 
-main files are in OSF storage/MATLAB scripts
+main files are in /OSF storage/MATLAB scripts/
 
 Raw EEG data can be found here: https://osf.io/b6rn9/.
 
-Order of matlab files to run in MATLAB online editor(OSF storage/MATLAB scripts)
+Order of matlab files to run in MATLAB online editor(/OSF storage/MATLAB scripts/)
 
 1. exp_read_preprocess_and_epoch_EEG.m
 2. exp_read_preprocess_and_epoch_EOG.m
@@ -20,6 +20,8 @@ Order of matlab files to run in MATLAB online editor(OSF storage/MATLAB scripts)
 6. exp_adding_labels_for_classification.m
 
 Later save the workspace. Workspaces are in https://drive.google.com/drive/folders/1QfRXZdpKXPldAwgzWF75BLz99X3y3tsM?usp=sharing
+
+Add these workspaces files in /OSF storage/MATLAB scripts/ when running in matlab.
 
 Workspaces order
 
