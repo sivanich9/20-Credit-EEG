@@ -19,6 +19,12 @@ Order of matlab files to run in MATLAB online editor(/OSF storage/MATLAB scripts
 5. exp_amplitude_and_psd.m
 6. exp_adding_labels_for_classification.m
 
+Instead of doing average of all electrodes, we can select particular electrodes and average them. We implemented the same but because of GPU issues, we are not able to run files. If you want to run those files also, follow the above order till exp_reject_components.m(including this file) and then run
+
+7. exp_combinations_electrodes_psd.m
+8. exp_adding_labels_combinations_for_classification.m
+ 
+
 Later save the workspace. Workspaces are in https://drive.google.com/drive/folders/1QfRXZdpKXPldAwgzWF75BLz99X3y3tsM?usp=sharing
 
 Add these workspaces files in /OSF storage/MATLAB scripts/ when running in matlab.
